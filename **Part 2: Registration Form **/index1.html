@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form - Week 2 Lesson</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <h2>Welcome! Please fill in the following fields to view content:</h2><br>
+        <!-- Personal Details Section -->
+        <fieldset>
+            <legend>Personal Details:</legend><br>
+            <label for="name">Full Name:</label>
+            <input type="text" name="name" id="name" required placeholder="Enter your full name, e.g., John Doe"><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" required min="18" placeholder="Must be older than 18 to access our services"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required placeholder="youremail@example.com"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" name="pswd" id="pswd" required minlength="6" maxlength="15" placeholder="Enter a password (6-15 characters)">
+        </fieldset><br>
+
+        <!-- Gender Selection Section -->
+        <fieldset>
+            <legend>Choose Your Gender:</legend><br>
+            <input type="radio" name="gender" id="male" value="male" required>
+            <label for="male">Male</label><br>
+
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label><br>
+
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other">Other</label><br>
+        </fieldset><br>
+
+        <!-- Residence Section -->
+        <fieldset>
+            <legend>Residence:</legend>
+            <label for="country">Country:</label>
+            <h3>Select your country:</h3>
+            <select id="country" name="country" required>
+                <option value="">-- Select a Country --</option>
+                <option value="Kenya">Kenya</option>
+                <option value="United States">United States</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+                <option value="India">India</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Germany">Germany</option>
+                <option value="Japan">Japan</option>
+            </select><br>
+        </fieldset><br>
+
+        <p>By registering, you agree to the terms and conditions of use.</p>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
